@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #66666666;
+}
+.subnav{
+    display: flex;
+    flex-direction: column;
+}
+.sub{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    font-size: 15px;
+    justify-content: space-evenly;
+    margin-left: 780px;
+}
+.btn{
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.btn-1{
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+select{
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+}
+.sub1{
+    display: flex;
+    flex-direction: row;
+    width: 850px;
+    justify-content: space-evenly;
+    margin-left: 400px;
+}
+ul{
+    list-style-type: none;
+}
+.body1{
+ display: flex;
+}
+.b1{
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    overflow: hidden;
+    padding: 20px;
+    padding-left: 30px;
+    align-items: center;
+}
+.b1 img{
+    height: 220px;
+    width: 280px;
+}
+.b1 h2{
+    font-weight:500;
+    color: red;
+}
+.learn{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+}
+.btn-2{
+    margin: auto;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    background-color: #2C3E50;
+}
+.head{
+    font-size: 33px;
+    padding-bottom: 10px;
+    color: red;
+    font-weight: 500;
+}
+.body2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body2 .con{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.body3{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+   margin-left: 200px;
+}
+.body3 img{
+    height: 150px;
+    width: 280px;
+    margin-right: 30px;
+}
+.body3 p{
+    font-size: 17px;
+}
+.box{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.box-col{
+    display: flex;
+    flex-direction: column;
+    width: 194px;
+    padding: 20px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border: 0.3px solid black;
+    background-color: 	#ffffff;
+}
+.head_con{
+    font-weight: bold;
+}
+.body4{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+}
+.sub1{
+    margin-top: 30px;
+    display: flex;
+    margin-left: 270px;
+}
+.subbody{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 520px;
+    padding: 30px;
+    align-items: center;
+}
+.subimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.subimg img{
+    width: 80px;
+    height:60px;
+    margin-right: 50px;
+}
+.subbody div{
+    padding: 15px;
+}
+.btn2{
+    border: 0.5px solid #3333ff;
+    border-radius: 20px;
+    font-size: 19px;
+    padding: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: 	#6666ff;
+    background-color: white;
+}
+.form{
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form input{
+    width: 380px;
+    border: none;
+    padding: 9px;
+}
+textarea{
+    border: none;
+    padding: 9px;
+}
+.subbtn{
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #ED1C24;
+    color: white;
+}
+.body5{
+    display: flex;
+    justify-content: space-around;
+}
+.body5-row{
+    display: flex;
+}
+.body5-col{
+    display: flex;
+    font-size: 13px;
+    color: #E74C3C;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.body5-col img{
+    width: 50px;
+    height:50px;
+    padding-bottom: 10px;
+}
+.spec{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding-bottom: 30px;
+}
+.spec-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.spec-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+}
+.client1-col1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+}
+.clientcol{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.clientrow{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+}
+.client1-col
+{
+    display: flex;
+    flex-direction: column;
+}
+.client1-row{
+    display: flex;
+    flex-direction: row;
+}
+.form1{
+    background-color: #2D3E50;
+    padding: 15px;
+}
+.clientrow1
+{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    justify-content: space-evenly;
+    background-color: #f1f1f1;
+}
+.footer-col
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 16px;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.footer-row1{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.footer-row ul li{
+    padding: 10px;
+}
+.footer-sub{
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.footer-row2{
+    display: flex;
+    padding-top: 10px;
+    background-color: #Bf2718;
+    align-items: center;
+}
+</style>
+<body>
+    <div class="con">
+      <!-----------------------------------Navigation bar--------------->
+     <div class="nav">
+        <img src="https://www.yourretailcoach.in/wp-content/uploads/2022/06/Updated-YRC-Logo-2.1.png" alt="">
+        
+        <div class="subnav">
+       <div class="sub">
+       <div class="drop">
+      <select>
+        <option>Asia & Other Regions</option>
+        <option>Middle East</option>
+        <option>Africa</option>
+      </select>
+       </div>
+       <button class="btn">Brochure</button>
+       <img src="https://www.yourretailcoach.in/wp-content/uploads/2022/10/btn-youtube.webp" alt="">
+       <button class="btn-1 ">Contact Us</button>
+       </div>
+       
+        <ul class="sub1">About 
+            <li>Services <i class="bi bi-caret-down"></i></li>
+            <li>Industries<i class="bi bi-caret-down"></i></li>
+            <li>Functions<i class="bi bi-caret-down"></i></li>
+            <li>E-commerce<i class="bi bi-caret-down"></i></li>
+            <li>Project Management<i class="bi bi-caret-down"></i></li>
+            <li>Clients<i class="bi bi-caret-down"></i></li>
+            <li>Resources<i class="bi bi-caret-down"></i></li>
+        </ul>
+
+        </div>
+     </div>
+
+          <!-------------------------Body--------------------->
+          <div class="body1">
+              <div class="b1" style="background-color: white;">
+              <h2>E-COMMERCE</h2>
+              <p>Thinking of starting an eCommerce business or taking your business online? Work with industry experts.</p>
+              <img src="https://www.yourretailcoach.in/wp-content/uploads/2021/08/eCommerce.png" alt="">
+              </div>
+               
+              <div class="b1" style="background-color: #f2f2f2;">
+                <h2>BRICK & MORTAR</h2>
+                <p>Set up or modernize your retail brick & mortar business with expert and reliable planning and implementation support.</p>
+                <img src="https://www.yourretailcoach.in/wp-content/uploads/2021/08/brick-mortar.png" alt="">
+                </div>
+
+                <div class="b1" style="background-color: #e6e6e6;">
+                    <h2>OMNICHANNEL</h2>
+                    <p>Give your business the edge of hybrid retail with our omnichannel expertise</p>
+                    <img src="https://www.yourretailcoach.in/wp-content/uploads/2021/08/hybrid.png" alt="">
+                    </div>
+
+                    <div class="b1" style="background-color: #d9d9d9;">
+                        <h2>D2C</h2>
+                        <p>Deliver your brand value directly to your customers with our D2C business services and solutions</p>
+                        <img src="https://www.yourretailcoach.in/wp-content/uploads/2022/03/D2C.jpg" alt="">
+                        </div>
+    
+          </div>
+
+      <div class="learn"> <button class="btn-2">Learn More</button> </div>
+    
+      <div class="body2">
+      <div class="head">Retail Consulting Company</div>
+      <div class="con">“Outstanding people have one thing in common: An absolute sense of mission.”</div>
+      </div>
+
+      <div class="body3">
+        <img src="https://www.yourretailcoach.in/wp-content/uploads/2022/04/clutch-2-1.png" alt="">
+        <p>What makes you tick us? A ceaseless drive to achieve greatness.<br>
+            Business consultants of YRC, a company based out of Pune, do this with style, alacrity, and a dauntless spirit. And coffee. Lots of coffee.<br>
+            We always strive for your success, and our own. But we don’t just give it away.<br>
+            We are always challenging ourselves to learn, and our<b> retail business consulting services </b> help our clients write their own success stories.</p>
+      </div>
+
+      <div class="box">
+        <div class="box-col">
+         <div class="head">500+</div>
+         <div class="head_con">Clients</div>
+        </div>
+          
+        <div class="box-col">
+            <div class="head">10+</div>
+            <div class="head_con">Countries</div>
+            </div>
+
+        <div class="box-col">
+            <div class="head">25+</div>
+            <div class="head_con">Verticals Served</div>
+           </div>
+
+        <div class="box-col">
+            <div class="head">95%</div>
+           <div class="head_con">Success Ratio</div>
+            </div>
+
+         <div class="box-col">
+            <div class="head">10+</div>
+            <div class="head_con">Years in Business</div>
+          </div>
+      </div>
+
+      <div class="body4">
+       <div class="head" style="font-size: 26px; margin-left: 500px;">Retail Management Consulting Services</div>
+       <div class="sub1">
+      <div class="subbody">
+         <div class="subimg">
+            <img src="data:image/png;base64,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" alt="">
+            <img src="data:image/png;base64,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" alt="">
+            <img src="data:image/png;base64,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" alt="">
+            <img src="data:image/png;base64,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" alt="">
+         </div>
+
+         <div>SOP is the fine art of achieving operational precision.</div>
+         <div>SOP design and development is one of our domains of expertise. Here, our goal is to help businesses eliminate their dependencies on undefined ways of working and become process-oriented enterprises from the inside out.</div>
+         <button class="btn2">Explore</button>
+        </div>
+
+        <div class="form"><div><h2>Quick Contact</h2></div>
+        <form action="">
+            <input type="text" placeholder="Your Name">
+            <br><br>
+            <input type="email" placeholder="Your Email">
+            <br><br>
+            <input type="number" placeholder="Contact No">
+            <br><br>
+            <textarea name="" id="" cols="50" rows="5" placeholder="Message"></textarea>
+            <input  class="subbtn" type="submit">
+        </form>
+    </div>
+       </div>
+      </div>
+
+      <div class="body5">
+        <div>Our Services are Designed as per<br>
+            the needs of your Company.</div>
+            
+
+            <div class="body5-col">
+        <img src="https://www.yourretailcoach.in/wp-content/uploads/2017/04/enter-retail.png" alt="">
+        <div>STARTUPS</div>
+        </div>
+
+        <div class="body5-col">
+            <img src="https://www.yourretailcoach.in/wp-content/uploads/2017/04/enter-retail.png" alt="">
+            <div>SME</div>
+        </div>
+
+         <div class="body5-col">
+           <img src="https://www.yourretailcoach.in/wp-content/uploads/2017/04/enter-retail.png" alt="">
+             <div>ENTERPRISE</div>
+            </div>
+
+        <div class="body5-col">
+          <img src="https://www.yourretailcoach.in/wp-content/uploads/2017/04/enter-retail.png" alt="">
+            <div>GOVERNMENT</div>
+        </div>
+    </div>
+        
+        <!-------------------------Our Specialisation---------------------->
+      <div class="spec">
+         <div  class="head" style="font-size: 26px; margin-left: 650px; margin-top: 30px;">Our Specialisation</div>
+          
+         <div class="spec-row">
+         <div class="spec-col">
+            <img src="https://www.yourretailcoach.in/wp-content/uploads/2020/09/11.png" alt="">
+            <div>Omnichannel Retail</div>
+         </div>
+
+            <div class="spec-col">
+               <img src="https://www.yourretailcoach.in/wp-content/uploads/2020/09/22.png" alt="">
+               <div>E-Commerce/Online<br>Business</div>
+            </div>
+
+                <div class="spec-col">
+                   <img src="https://www.yourretailcoach.in/wp-content/uploads/2020/09/33-1.png" alt="">
+                   <div>25+ Retail Verticals</div>
+                </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-col">
+           <img src="https://www.yourretailcoach.in/wp-content/uploads/2020/09/44.png" alt="">
+           <div>Market Research and Business Plan</div>
+        </div>
+
+           <div class="spec-col">
+              <img src="https://www.yourretailcoach.in/wp-content/uploads/2020/09/55.png" alt="">
+              <div>SOP's (Standard Operating Procedures)</div>
+           </div>
+
+               <div class="spec-col">
+                  <img src="https://www.yourretailcoach.in/wp-content/uploads/2020/09/66.png" alt="">
+                  <div>Franchise Model Development</div>
+               </div>
+     </div>
+    </div>
+
+   <!----------------Testimonials------------------------>
+   <div class="clientcol1">
+     <div  class="head" style="font-size: 26px; margin-left: 650px; margin-top: 30px;">Client Testimonials</div>
+     <div class="clientrow">
+        <img src="https://www.yourretailcoach.in/wp-content/uploads/2019/09/Grasim-Cover.jpg" alt="">
+        <div class="clientcol" style="border: none;">
+           <p>"Right from "concept" to "execution" YRC has helped us, So I am extremely. And they<br> have supported us from in the entire journey "</p>
+            <h3>-Aditya Brila Grasim Industries</h3>
+            <button class="btn2" style="width: 160px;">Testimonials</button>
+        </div>
+
+     </div>
+   </div>
+ 
+   <!---------------------------Our Clients-------------->
+   <div class="clientrow1">
+     <div class="client1-col">
+        <div class="head" style="font-size: 26px; margin-left: 300px;">Our Clients</div>
+        <div class="client1-row">
+            <img src="https://www.yourretailcoach.in/wp-content/uploads/2022/06/YRC-Home-page-design.png" alt="">
+        </div>
+     </div>
+   <div class="form1">
+    <form action="">
+        <h2 style="color:white">SCALE. GROW. EXPAND. ORGANIZE</h2>
+        <form action="">
+            <input type="text" placeholder="Your Name">
+            <br><br>
+            <input type="email" placeholder="Your Email">
+            <br><br>
+            <input type="number" placeholder="Contact No">
+            <br><br>
+            <textarea name="" id="" cols="50" rows="5" placeholder="Message"></textarea>
+            <br><br>
+            <input  class="subbtn" type="submit">
+        </form>
+   </div> 
+    </div>
+
+    <!--------------------Footer--------------->
+    <div>
+        <div class="footer-col">
+        <div class="footer-row">
+            <ul style="list-style-type:initial;">Get Connected
+                <li> About YRC</li>
+                <li>Terms of Use</li>
+                <li>Privacy Statement</li>
+                <li>Careers</li>
+                <li>Channel Partnership</li>
+                <li>CSR</li>
+                <li>Contact Us</li>
+                <li>Sitemap</li>
+            </ul>
+
+            <ul style="list-style-type:initial;">Retail Consulting
+                <li>Retail Store Setup</li>
+                <li>SOP for Retail Store</li>
+                <li>Setup eCommerce Business</li>
+                <li> Dark Stores Retail</li>
+                <li> Develop Franchise Model</li>
+                <li> Retail Store Business Plan</li>
+                <li> Retail Management Training</li>
+                <li>Standard Operating Procedures</li>
+                <li> Business Plan Services</li>
+            </ul>
+
+            <ul style="list-style-type:initial;">Industries
+                <li> Ecommerce Management</li>
+                <li> Apparel, Fashion Retail</li>
+                <li>Grocery & Supermarket</li>
+                <li>  Furniture & Furnishings Retail</li>
+                <li> Luxury Retail Consulting</li>
+                <li> Healthcare Management</li>
+                <li>  Stationery & Toy Retail</li>
+                <li>Automobile Dealership</li>
+                <li>Education Management</li>
+                <li>Restaurant | QSR</li>
+            </ul>
+
+            <ul style="list-style-type:initial;">E-Commerce Consulting
+                <li>  Online Fashion Consulting</li>
+                <li> B2B eCommerce Consulting</li>
+                <li>Start Dark Store</li>
+                <li>  Start Online Grocery</li>
+                <li>  Omnichannel Retail</li>
+                <li> Automate eCommerce</li>
+                <li>  eCommerce Market Research</li>
+                <li>  Start eCommerce Business</li>
+                <li> Online Business Consulting</li>
+            </ul>
+
+        </div>
+        </div>
+        <div class="footer-row2">
+          <div class="footer-row1"></div>
+          <div class="footer-sub">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-pinterest"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+        
+          <p>© 2023 Mind-A-Mend Consultancy Pvt. Ltd | India | UAE | Dubai | Saudi Arabia</p>
+        </div>
+    </div>
+        </div>
+</body>
+</html>
